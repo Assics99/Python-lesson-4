@@ -18,7 +18,7 @@ new_blue = Image.blend(blue_right, blue_middle, 0.5)
 coordinates = (50, 0, green.width - 50, green.height)
 new_green = green.crop(coordinates)
 
-new_image = Image.merge("RGB", (new_red, new_blue, new_green))
+new_image = Image.merge("RGB", (new_red, new_green, new_blue))
 new_image.save("new_monro.jpg")
 
 new_image.thumbnail((80,80))
